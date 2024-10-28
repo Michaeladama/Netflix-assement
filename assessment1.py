@@ -1,6 +1,5 @@
 from google_drive_assessment.auth import create_drive_service
 
-# Existing functions...
 
 def generate_count_report(service, folder_id, output_path='count_report.txt'):
     """Generates a text report of file and folder counts in the specified folder."""
@@ -23,9 +22,9 @@ def generate_count_report(service, folder_id, output_path='count_report.txt'):
 
 def main():
     service = create_drive_service()
-    folder_id = '1cpo-7jgKSMdde-QrEJGkGxN1QvYdzP9V'  # Replace with the ID of the folder you want to analyze
+    folder_id = '1cpo-7jgKSMdde-QrEJGkGxN1QvYdzP9V'  
 
-    # Call the count report function
+  
     generate_count_report(service, folder_id)
 
 if __name__ == "__main__":
